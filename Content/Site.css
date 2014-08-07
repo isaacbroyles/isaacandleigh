@@ -1,7 +1,7 @@
 ﻿body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-    padding-top: 50px;
     padding-bottom: 20px;
+	min-width: 1040px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -13,7 +13,6 @@
 .header
 {
     padding: 1.2em 0;
-    padding-top: 1.2em;
     padding-right: 0px;
     padding-bottom: 1.2em;
     padding-left: 0px;
@@ -22,9 +21,8 @@
 
 .banner
 {
-    height: 414px;
-    width: 100%;
-    background: url(header.png); 
+	width: 480px;
+	height: 551px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -57,4 +55,140 @@ input[type="checkbox"].input-validation-error {
 
 .validation-summary-valid {
     display: none;
+}
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1040px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2 {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_2 .grid_1 {
+	width:500px;
+}
+
+.container_2 .grid_2 {
+	width:1020px;
+}
+
+
+
+
+/* Prefix Extra Space >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_2 .prefix_1 {
+	padding-left:520px;
+}
+
+
+
+/* Suffix Extra Space >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_2 .suffix_1 {
+	padding-right:520px;
+}
+
+
+
+/* Push Space >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_2 .push_1 {
+	left:520px;
+}
+
+
+
+/* Pull Space >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_2 .pull_1 {
+	left:-520px;
+}
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
 }
