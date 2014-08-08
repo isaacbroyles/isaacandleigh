@@ -3,7 +3,7 @@
 	color: white;
     padding-bottom: 20px;
 	background: url(./back.png);
-	background-size: cover;
+	background-size: contain;
 }
 
 /* Set padding to keep content from hitting the edges */
