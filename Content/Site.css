@@ -4,6 +4,7 @@
     padding-bottom: 20px;
 	background: url(./back.png);
 	background-size: cover;
+	background-position: center;
 }
 
 /* Set padding to keep content from hitting the edges */
